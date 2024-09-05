@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dark mode & Sticky navber</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- fonts -->
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</head>
+<body>
+<!-- nav start -->
+ <nav>
+    <div class="nav-wrapper container">
+        <div class="logo"><a href="#">BERGER</a>
+            <span class="person"><i class="fa-regular fa-user"></i></span>
+
+        </div>
+
+        <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Reservation</a></li>
+<div>
+    <ion-icon name="moon" class="switch"></ion-icon>
+  
+</div>
+
+    </ul>
+
+
+    </div>
+</nav>
+
+ <!-- nav end -->
+
+<!-- off canvas -->
+<aside id="off">
+    <ul class="canvas">
+    <li><span><i class="fa-regular fa-address-book"></i></span><a href="#">BERGER</a></li>
+    <li><span><i class="fa-solid fa-crown"></i></span><a href="#">Subscribe to get free dilership</a></li>
+    <li><span><i class="fa-solid fa-table-list"></i></span><a href="#">Orders</a></li>
+    <li><span><i class="fa-regular fa-user"></i></span><a href="#">Profile</a></li>
+    <li><span><i class="fa-solid fa-ticket"></i></span><a href="#">Vouchers</a></li>
+    <li><span><i class="fa-solid fa-trophy"></i></span><a href="#">Painting Rewords</a></li>
+    <li><span><i class="fa-solid fa-question"></i></span><a href="#">Hlep center</a></li>
+
+    </ul>
+    <span class="cross"><i class="fa-regular fa-circle-xmark"></i></span>
+</aside>
+
+
+
+ <!-- off canvas end -->
+
+
+
+
+
+<!-- hero section -->
+ <section class="hero-section">
+    <div class="container hero-wrapper">
+        <div>
+            <h1>Berger Paints Bangladesh</h1>
+            <p>In the geographical region of Bangladesh, Berger Paints were imported from Berger UK and then from Berger Pakistan. In 1970, the Kalurghat, Chittagong factory was inaugurated. In 1980, the name of the company changed from J&N (Bangladesh) Limited to Berger Paints Bangladesh Limited.</p>
+            <a href="#" class="btn">Get Paints Your Home</a>
+        </div>
+
+<div>
+    <img src="./img1.png" width="500" height="300" alt="">
+</div>
+
+
+    </div>
+ </section>
+ <img src="./Berger.png" alt="">
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(".switch").click(function(){
+      $("body").toggleClass("dark-mode"); 
+      if($("body").hasClass("dark-mode")){
+        $("switch").attr("name", "sunny");
+      }else{
+        $(".switch").attr("name", "moon");
+      }
+    });
+</script>
+
+ <!-- hero section end -->
+
+<script src="./app.js"></script>
+</body>
+</html>
